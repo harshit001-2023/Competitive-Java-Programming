@@ -33,6 +33,10 @@ public class TwoSumSolver {
         int[] numbers = {1, 3, 5, 8, 9, 11};
         int target = 10;
 
-        System.out.println(Arrays.toString(TwoSumSolver(numbers, target)));
+        // Call the method directly by its name
+        int[] result = twoSum(numbers, target);
+
+        // Print the result array using Arrays.toString()
+        System.out.println(Arrays.toString(result));
     }
 }
