@@ -13,10 +13,14 @@ public class sample {
 
         if((s1 + s2 > s3) && (s1 + s3 > s2) && (s2 + s3 > s1)){
             if((s1 == s2) && (s2 == s3)){
+                System.out.println("This is an Equilateral triangle.");
+            }else if((s1 == s2) || (s2 == s3) || (s1 == s3)){
                 System.out.println("This is an Isosceles triangle.");
-            }else if((s1 != s2) && (s2 != s3) && (s1 != s3)){
-                System.out.println("");
+            }else{
+                System.out.println("This is a Scalene triangle.");
             }
+        }else {
+            System.out.println("This ia not a valid Triangle.");
         }
     }
 }
