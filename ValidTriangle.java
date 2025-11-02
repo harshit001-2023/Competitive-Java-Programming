@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class sample {
+public class ValidTriangle {
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
