@@ -86,6 +86,8 @@ The repository includes solutions for:
 
 ## Problem Categories
 
+
+
 ### Array Problems
 - Finding maximum/minimum elements
 - Array reversal
@@ -100,6 +102,7 @@ The repository includes solutions for:
 
 ### LinkedList Problems
 - MergeLists
+- LinkedList Problems
 
 ### Number Problems
 - Digit manipulation
