@@ -98,6 +98,9 @@ The repository includes solutions for:
 - Number patterns
 - Pyramid patterns
 
+### LinkedList Problems
+- MergeLists
+
 ### Number Problems
 - Digit manipulation
 - Number system conversions
