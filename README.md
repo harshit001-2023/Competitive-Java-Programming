@@ -86,7 +86,8 @@ The repository includes solutions for:
 
 ## Problem Categories
 
-
+### Problems
+- ValidTriangle
 
 ### Array Problems
 - Finding maximum/minimum elements
