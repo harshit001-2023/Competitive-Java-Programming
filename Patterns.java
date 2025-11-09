@@ -205,11 +205,23 @@ public class Patterns {
 		}
 	}
 
-	// static void pattern9(int n){
-	// 	/*
-	// 	 * 
-	// 	 */
-	// }
+	 static void pattern9(int n){
+	 	/* 1
+	 	 * 1 2
+	 	 * 1   3
+	 	 * 1     4
+	 	 * 1 2 3 4 5
+	 	 */
+
+		 for(int i = 0; i< n; i++){
+			 for (int j = 0; j <= i; j++){
+				 if (j == 1 || j == i) System.out.print("j ");
+				 else .println(" ");
+			 }
+			 System.out.println();
+		 }
+
+	 }
 
 
 	public static void main(String[] args) {
@@ -223,10 +235,10 @@ public class Patterns {
 		int t = sc.nextInt();
 		for (int i = 0; i < t; i++) {
 			int n = sc.nextInt();
-			pattern8(n);
+			pattern9(n);
 		}
 		sc.close();
-		// System.out.println("Patterns");
+//		 System.out.println("Patterns");
 		
 	}
 }
