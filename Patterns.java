@@ -262,6 +262,42 @@ public class Patterns {
 		}
 	}
 
+	static void pattern111(int n) {
+		/*
+		 * Desired Pattern (Example for n=4):
+		 * 1 0 1 0 1
+		 * 0 1 0 1 0
+		 * 1 0 1 0 1
+		 * 0 1 0 1 0
+		 * 1 0 1 0 1
+		 */
+
+		// Outer loop for rows (from 0 to n)
+		for (int i = 0; i <= n; i++) {
+
+			// Determine the starting number for the row
+			int start;
+			if (i % 2 == 0) {
+				// Even rows (0, 2, 4...) start with 1
+				start = 1;
+			} else {
+				// Odd rows (1, 3, 5...) start with 0
+				start = 0;
+			}
+
+			// Inner loop for columns (from 0 to n)
+			for (int j = 0; j <= n; j++) {
+				// Print the current start value
+				System.out.print(start + " ");
+
+				// Flip the value for the next number in the row
+				// (1 becomes 0, and 0 becomes 1)
+				start = 1 - start;
+			}
+			System.out.println();
+		}
+	}
+
 
 	public static void main(String[] args) {
 		try {
@@ -274,7 +310,7 @@ public class Patterns {
 		int t = sc.nextInt();
 		for (int i = 0; i < t; i++) {
 			int n = sc.nextInt();
-			pattern10(n);
+			pattern111(n);
 		}
 		sc.close();
 //		IO.println("Happy Java 25");
