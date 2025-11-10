@@ -242,6 +242,26 @@ public class Patterns {
 		}
 	}
 
+	static void pattern11(int n){
+		/*
+		* 10101
+		* 01010
+		* 10101
+		* 01010
+		* */
+		for (int i = 0; i <= n; i++){
+			if (i%2==0){
+				for (int j = 0; j <= n; j++){
+					System.out.print(1+" ");
+				}
+			}else {
+				for (int j = 0; j <= n; j++){
+					System.out.print(0+" ");
+				}
+			}
+		}
+	}
+
 
 	public static void main(String[] args) {
 		try {
