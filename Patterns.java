@@ -223,6 +223,24 @@ public class Patterns {
 
 	 }
 
+	static void pattern10(int n){
+		/* 10101010
+		*  01010101
+		*  10101010
+		*  01010101
+		*  10101010
+		* */
+		int c = 1;
+		for (int i = 0; i <= n; i++){
+			for (int j = 0; j <= n; j++){
+				if(i%2==0) System.out.print(1+" ");
+				else System.out.print(0+" ");
+				c++;
+			}
+			System.out.println();
+		}
+	}
+
 
 	public static void main(String[] args) {
 		try {
@@ -235,9 +253,10 @@ public class Patterns {
 		int t = sc.nextInt();
 		for (int i = 0; i < t; i++) {
 			int n = sc.nextInt();
-			pattern9(n);
+			pattern10(n);
 		}
 		sc.close();
+//		IO.println("Happy Java 25");
 //		 System.out.println("Patterns");
 		
 	}
