@@ -1,17 +1,25 @@
 package JavaJourney.HRSystems;
 
-public class Intern extends Employee{
+public class Intern extends Employee {
+    private int durationInMonths;
 
-    public Intern(String name, int id, int salary) {
+    public Intern(String name, int id, double salary, int durationInMonths) {
         super(name, id, salary);
+        this.durationInMonths = durationInMonths;
     }
 
     @Override
-    void raiseSalary(double percent) {
-        super.raiseSalary(percent);
+    public void displayInfo() {
+        System.out.println("ID: " + getId() + " | Name: " + getName() +
+                " | Salary: " + getSalary() +
+                " | Duration: " + durationInMonths + " months");
     }
 
-    void durationInMonths(){
-        System.out.println("Duration of 6 Months");
+    public int getDurationInMonths() {
+        return durationInMonths;
+    }
+
+    public void setDurationInMonths(int durationInMonths) {
+        this.durationInMonths = durationInMonths;
     }
 }

@@ -5,34 +5,34 @@ public class Employee {
     private int id;
     private double salary;
 
-    Employee(String name, int id, double salary){
+    public Employee(String name, int id, double salary){
         this.name = name;
         this.id = id;
         this.salary = salary;
     }
 
-    void raiseSalary(double percent){
+    public void raiseSalary(double percent){
         salary += salary * percent / 100;
     }
 
-    void  displayInfo(){
-        System.out.println("ID: "+id+" | Name: " +name+"| Salayr: " +salary);
+    public void displayInfo(){
+        System.out.println("ID: " + id + " | Name: " + name + " | Salary: " + salary);
     }
 
-    public static class EmployeeDemo{
-        public static void main(String[] args){
-            Employee emp = new Employee("Harry", 101, 100000.00);
-            emp.raiseSalary(10);
-            emp.displayInfo();
+    // Getters for subclasses to access protected data
+    public String getName() {
+        return name;
+    }
 
-            Employee mgr = new Manager("Raghav", 102, 15000);
-            mgr.raiseSalary(20);
-            emp.displayInfo();
+    public int getId() {
+        return id;
+    }
 
-            Intern in = new Intern("Saket", 112, 20000);
-            in.raiseSalary(5);
-            in.displayInfo();
-            in.durationInMonths();
-        }
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 }
