@@ -1,4 +1,4 @@
-package JavaJourney;
+package JavaJourney.HRSystems;
 
 public class Employee {
     private String name;
@@ -24,6 +24,15 @@ public class Employee {
             Employee emp = new Employee("Harry", 101, 100000.00);
             emp.raiseSalary(10);
             emp.displayInfo();
+
+            Employee mgr = new Manager("Raghav", 102, 15000);
+            mgr.raiseSalary(20);
+            emp.displayInfo();
+
+            Intern in = new Intern("Saket", 112, 20000);
+            in.raiseSalary(5);
+            in.displayInfo();
+            in.durationInMonths();
         }
     }
 }
