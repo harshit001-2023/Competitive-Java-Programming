@@ -9,11 +9,11 @@ Calculate and print the total salary of person.
 */
 
 void main(){
-	IO.prinln("Enter Sal : ");
+	IO.println("Enter Sal : ");
 	double b_sal = Integer.parseInt(IO.readln());
 	double hra_per = (b_sal*15)/100, con_per = (b_sal*15)/100, ent_per = (b_sal*10)/100;
 	IO.println("Basic HRA = " +hra_per);
 	IO.println("Basic HRA = " +con_per);
 	IO.println("Basic HRA = " +ent_per);
-	IO.println("Basic HRA = " +(b_sal+hra_per+con_per+ent_per));B
+	IO.println("Basic HRA = " +(b_sal+hra_per+con_per+ent_per));
 }

@@ -12,8 +12,9 @@ void main(){
 	//String num = IO.readln();
 	int a = Integer.parseInt(IO.readln());
 	
-	if(a <= 100) IO.println("Call rental 360");
-	else if(a <= 250 && a>= 101) IO.println("Call rent : "+(a*1));
+	if(a <= 100)
+		IO.println("Call rental 360");
+	else if(a <= 250) IO.println("Call rent : "+(a*1));
 	else IO.println("Call rent "+(a*1.2));
 
 }
