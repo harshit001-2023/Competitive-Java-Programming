@@ -13,9 +13,11 @@ You must pass these hidden test cases to fully solve the problem.
 
 
 void main(){
+    IO.println("Enter first number: ");
     int x = Integer.parseInt(IO.readln());
+    IO.println("Enter second number: ");
     int y = Integer.parseInt(IO.readln());
-
+    IO.println("Enter an Operation [ADD/SUB/MUL/DIV]: ");
     String operation = IO.readln().toUpperCase();
 
     String result = switch(operation){
