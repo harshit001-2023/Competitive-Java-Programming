@@ -17,25 +17,37 @@ Output:
 Decimal = 10*/
 
 void main(){
+    // Taking Input
     IO.println("Enter binary digit : ");
     int number = Integer.parseInt(IO.readln());
     int decimal = 0, i = 0;
 
-    while(number!=0){
-        int temp = number % 10;
-        if(number < 0){
-            IO.println("Invalid Input! Binary number cannot be negative.");
-            System.exit(0);
+    // Edge case number should no be less than 0
+    if(number < 0){
+        IO.println("Invalid Input! Binary number cannot be negative.");
+        System.exit(0);
+    }else {
+        // Runs upto number is not Zero
+        while(number!=0){
+            // Extracting each number
+            int digit = number % 10;
+
+            // Digit should not be other than zero and 1 means binary
+            if(digit != 1 && digit != 0){
+                IO.println("Invalid Binary Number! Only 0 and 1 are allowed.");
+                System.exit(0);
+            }
+            else {
+                // Else convert into decimal
+                // By using the logic
+                // 1010 => (1*2^3)+(0*2^2)+(1*2^1)+(0*2^0)
+                //      => 8 + 0 + 2 + 0 => 10
+                decimal = decimal + (int)(Math.pow(2,i))*digit;
+                number/=10;
+            }
+            // increment i
+            i++;
         }
-        if(temp != 1 && temp != 0){
-            IO.println("Invalid Binary Number! Only 0 and 1 are allowed.");
-            System.exit(0);
-        }
-        else {
-            decimal = decimal + (int)(Math.pow(2,i))*temp;
-            number/=10;
-        }
-        i++;
     }
 
     IO.println("Decimal = "+decimal);
