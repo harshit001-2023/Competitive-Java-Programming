@@ -18,13 +18,17 @@ Output:
 GCD = 4*/
 
 void main(){
+    // Taking two intteger inputs
+    IO.println("Enter two numbers : ");
     int num = Integer.parseInt(IO.readln());
     int num1 = Integer.parseInt(IO.readln());
 
+    // Checking whether the numbers are greater than zero or not
     if(num <= 0 || num1 <= 0){
         IO.println("Invalid Input! Numbers must be greater than zero.");
     }
     else{
+        // Here the logic for GCD implemented
         int temp = 0;
         for(int i = 1; i <= num; i++){
             if(num % i == 0 && num1 % i == 0){
