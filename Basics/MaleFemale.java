@@ -16,8 +16,10 @@ Welcome Madam
 */
 
 void main(){
+    // Asking user to enter their gender
 	String gender = IO.readln("Enter your Gender[M/F] :");
-	
+
+    // Checking whether their gender is Male or Female
 	if(gender.charAt(0) == 'M' || gender.charAt(0) == 'm'){ 
 		IO.println("Your gender is :M\nWelcome Sir");
 		}
