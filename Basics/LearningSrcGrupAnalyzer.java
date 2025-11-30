@@ -40,8 +40,10 @@ Explanation:
 NOTE - USE trim() for empty String validation*/
 
 void main(){
+    // taking User input
     String input = IO.readln().toUpperCase();
 
+    // Practicing Switch statement
     String result = switch(input){
         case "FACULTY","TEACHER","CLASS" -> "Best understood in Classroom Session";
         case "MENTOR","GUIDE","TRAINER" -> "Best understood during Mentorship";
