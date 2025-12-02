@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class HotelBookingApp {
     static void main() {
+
+        // Taking user details like Name, Hotel Name, Room Rate per Day, Days Stayed, etc.
         Scanner sc = new Scanner(System.in);
         IO.print("Enter Customer Name: ");
         String name = sc.nextLine();
@@ -19,11 +21,13 @@ public class HotelBookingApp {
         IO.print("Enter Number of Days Stayed: ");
         int days = sc.nextInt();
 
+        // Showing user information for confirmation.
         IO.println("Customer Name: " + name);
         IO.println("Hotel Name: " + hotelName);
         IO.println("Room Rate per Day: " + roomRate);
         IO.println("Days Stayed: " + days);
 
+        // Printing all user details and their and their total payable amount with discount
         IO.println("Customer Name : "+name);
         IO.println("Hotel Name : "+hotelName);
         IO.println("Customer Name : "+roomRate);
