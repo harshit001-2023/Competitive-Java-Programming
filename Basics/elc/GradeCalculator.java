@@ -11,6 +11,7 @@ public class GradeCalculator {
         IO.println("Enter your marks : ");
         double marks = sc.nextDouble();
 
+        // Calling and displaying Grades archived by students according to their marks.
         IO.print("Your grade is : "+ Student.calculateGrade(marks));
     }
 }
