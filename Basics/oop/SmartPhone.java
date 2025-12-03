@@ -18,7 +18,7 @@ public class SmartPhone {
         IO.println("Camera Megapixel "+mg+"mg");
     }
     public void cameraQuality(String brand){
-        switch(brand.toUpperCase(Locale.ROOT)){
+        switch(brand.toUpperCase()){
             case "SAMSUNG", "APPLE", "GOOGLE" ->
                     IO.println(brand.toUpperCase()+" cameras are the best mobile cameras.");
             case "VIVO","ONEPLUS" ->

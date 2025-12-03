@@ -8,6 +8,7 @@ public class Human {
 
         Human human = new Human();
 
+        IO.println();
         if (gender.toUpperCase().charAt(0) == 'F'){
             human.female(name,age);
         }else if(gender.toUpperCase().charAt(0) == 'M'){
@@ -18,9 +19,9 @@ public class Human {
 
     }
     public void female(String name, int age){
-        IO.println("Name "+name+"\nGender Female \nAge : "+age);
+        IO.println("Name "+name.toUpperCase()+"\nGender Female \nAge : "+age);
     }
     public void male(String name, int age){
-        IO.println("Name "+name+"\nGender male \nAge : "+age);
+        IO.println("Name "+name.toUpperCase()+"\nGender male \nAge : "+age);
     }
 }
