@@ -3,7 +3,7 @@ package Basics.oop;
 public class Fan {
     static void main() {
         String name = IO.readln("Enter name : ");
-        String coil = IO.readln("Enter coil number : ");
+        String coil = IO.readln("Enter coil Name : ");
         int wings = Integer.parseInt(IO.readln("Enter wings : "));
 
         Fan fan = new Fan();
