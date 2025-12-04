@@ -17,4 +17,6 @@ public class Employee {
         IO.println("Employee name : "+employeeName);
         IO.println("Employee Price : "+ employeeSalary);
     }
+
+
 }
