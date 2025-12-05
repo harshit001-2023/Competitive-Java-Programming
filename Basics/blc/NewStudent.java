@@ -49,7 +49,18 @@ public class NewStudent {
         else studentGrade = 'E';
     }
 
+    @Override
+    public String toString() {
+        return "NewStudent[" +
+                "studentId=" + studentId +
+                ", studentName='" + studentName + '\'' +
+                ", studentMarks=" + studentMarks +
+                ", studentGrade=" + studentGrade +
+                ']';
+    }
+
     public void displayDetails(){
-        IO.println("Student [name="+studentName+", studentId="+studentId+", marks="+studentMarks+", grade="+studentGrade+"]");
+        IO.println(toString());
+        //        IO.println("Student [name="+studentName+", studentId="+studentId+", marks="+studentMarks+", grade="+studentGrade+"]");
     }
 }
