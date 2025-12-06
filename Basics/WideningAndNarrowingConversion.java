@@ -21,9 +21,11 @@ Original double value: 45.67
 Narrowed int value: 45*/
 
 void main(){
+    // Taking input
     int num = Integer.parseInt(IO.readln());
     double num1 = Double.parseDouble(IO.readln());
 
+    // Method Calling
     wideningConversion(num);
     IO.println();
     narrowingConversion(num1);
@@ -31,12 +33,14 @@ void main(){
 }
 
 void wideningConversion(int num){
+    // Converting integer to double
     IO.println("Widening Conversion Method Called");
     Double n = (double)num;
     IO.println("Received double value: "+n);
 }
 
 void narrowingConversion(double num1){
+    // Converting double to int
     IO.println("Narrowing Conversion Method Called");
     IO.println("Original double value: "+num1);
     Integer n = (int)num1;
