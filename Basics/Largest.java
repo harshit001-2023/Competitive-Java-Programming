@@ -6,7 +6,7 @@ Write a Java program to find Largest of Three Numbers.
 
 
 void main(){
-    // Takin three Integers as input
+    // Taking three Integers as input
 	IO.print("Enter three values : ");
 	int a = Integer.parseInt(IO.readln());
 	int b = Integer.parseInt(IO.readln());
