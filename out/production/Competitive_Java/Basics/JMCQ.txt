@@ -1,0 +1,210 @@
+Q1) What is the output of the following Java Code?
+int a=9;
+float b = a/2;
+IO.println(b);
+
+a 4.0          Ans
+b 4.5
+c 5.0
+d None of the above
+
+
+
+Q2) What is the output of the following Java Code?
+char ch = 'A';
+int a = ch + 1;
+ch = (char)a;
+IO.println(ch);
+
+a 66
+b A
+c B      Ans
+d 65
+
+
+
+Q3) What is the output of the following Java Code?
+float a = 8.2/2;
+IO.println(a);
+
+a.4.1
+b.8.1
+c.4
+d.Compiler error.Ans
+
+
+Q4) What is the output of the following Java Code?
+int a = 260;
+byte b= (byte)a;
+IO.println(b);
+
+a.0
+b.4		Ans
+c.255
+d.260               
+
+
+
+Q5) What is the output of the following Java Code?
+short a = (short)65540;
+IO.println(a);
+
+a.0
+b.4		Ans
+c.65536
+d.65540
+
+
+Q6) What is the output of the following Java Code?
+ int a = 300;
+ long b = a;
+ IO.println(b);
+ 
+ Ans: 300
+
+
+
+Q7) What is the output of the following Java Code?
+ char ch = 'C';
+ int i = ch;
+ IO.println(i);
+ 
+ Ans: 68
+
+
+
+Q8) What is the output of the following Java Code?
+ IO.print("Y"+"O");	= YO
+ IO.println('L');	= L
+ IO.println('O');	= O
+
+
+
+Q9) What is the output of the following Java Code?
+ IO.println("Y"+"O");	= YO
+ IO.println('L' + 'O'); = 155
+
+
+
+Q10) What is the output of the following Java Code?
+
+ int i = 100;
+ long l = i;
+ float f = l;
+ IO.println("Int value " + i);		= 100
+ IO.println("Long value " + l);		= 100
+ IO.println("Float value " + f);	= 100.0
+
+
+
+Q11) What is the output of the following Java Code?
+char ch = 'c';
+int num = 88;
+ch = num;	Ans: INCOMPATIBLE CONERSION
+
+
+Q12) What is the output of the following Java Code?
+
+byte b = 42;
+char c = 'a';
+short s = 1024;
+int i = 50000;
+float f = 5.67f;
+double d = .1234;//						 'c'
+double result = (f * b) + (i / c) - (d * s); // (5.67*42)+(50000/96)-(0.1234*1024)
+IO.println("result = " + result);	ANS: 626.7784146484375
+
+
+Q13)  What is the output of the following Java Code?
+
+int x = 10;
+if (x = 20) 
+{  
+    IO.println("Hello"); // ERROR
+}
+
+
+Q14)  What is the output of the following Java Code?
+
+int a = 5;
+if (a++ == 5) //5==5
+    if (a++ == 6) //6==6
+        IO.println("Yes");
+    else
+        IO.println("No");
+    else
+        IO.println("Maybe");
+ANS: BLANK
+
+
+Q15)  What is the output of the following Java Code?
+boolean flag = false;
+if (flag = true)
+    IO.println("True"); //TRUE
+else
+    IO.println("False"); 
+
+
+Q16)  What is the output of the following Java Code?
+String s = "Java";
+if (s == "Java")
+    IO.println("Match 1");
+if (s.equals("Java"))
+    IO.println("Match 2"); //ANS: MATCH 2
+
+
+Q17)  What is the output of the following Java Code?
+int x = 10;
+
+if (x > 5)
+    if (x < 9)
+        IO.println("A");
+    else
+        IO.println("B"); // ANS: B
+else
+    IO.println("C");
+
+
+Q18)  What is the output of the following Java Code?
+int x = 10;
+
+if (x > 5)
+    if (x < 9)
+        IO.println("A");
+    else
+       IO.println("B"); // ANS: B
+    else
+       IO.println("C");
+
+
+Q19)  What is the output of the following Java Code?
+int n = 0;
+
+if (n == 1 || n == 0)
+    IO.println("Yes"); // ANS: YES
+else
+    IO.println("No");
+
+
+Q20)  What is the output of the following Java Code?
+char c = 'A';
+
+if (c >= 'a' && c <= 'z')
+    IO.println("Lower");
+else if (c >= 'A' && c <= 'Z')
+    IO.println("Upper");
+    // ANS: UPPER
+
+
+Q21) What is the output of the following Java Code?
+boolean a = true;
+boolean b = false;
+
+if (a & b)
+    IO.println("1");
+if (a && b)
+    IO.println("2");
+if (a | b)
+   IO.println("3");  // ANS: 3
+if (a || b)
+    IO.println("4"); // ANS: 4
