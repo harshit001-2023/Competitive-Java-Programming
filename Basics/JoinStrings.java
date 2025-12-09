@@ -5,6 +5,7 @@ single string, separated by a space & return.
 Examples
 Example 1
 Input:
+2
 Hello
 World
 Output:
