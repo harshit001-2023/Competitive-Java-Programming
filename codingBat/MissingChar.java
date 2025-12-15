@@ -1,3 +1,5 @@
+package codingBat;
+
 public class MissingChar {
     static void main() {
         // Input and Printing Result
