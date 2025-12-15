@@ -6,6 +6,7 @@ public class Front3 {
             IO.print("Enter a String: ");
             String str = IO.readln();
             IO.println(front3(str));
+//            IO.println(fMiddleF(str));
             char choice = IO.readln("Continue [y/n]: ").charAt(0);
             if(choice == 'n' || choice == 'N') break;
         }
@@ -21,6 +22,10 @@ public class Front3 {
             temp = temp + sub;
         }
         return temp;
+    }
+
+    public static String fMiddleF(String str){
+        return str.charAt(str.length()) + str + str.charAt(str.length());
     }
 
 }
