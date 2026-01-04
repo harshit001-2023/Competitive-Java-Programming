@@ -25,7 +25,9 @@ class Result1 {
 
     public static List<String> romanizer(List<Integer> numbers) {
         // Write your code here
+        // Declaring Array values
         int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        // Inserting symbols
         String[] symbols = {"M","CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 
         List<String> result = new ArrayList<>();
