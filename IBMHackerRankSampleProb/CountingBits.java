@@ -48,11 +48,12 @@ class Result {
 
 public class CountingBits {
     public static void main(String[] args) throws IOException {
+        // Using String Buffer for more functions
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
-
+        // Creating an list variable
         List<Integer> result = Result.getOneBits(n);
 
         bufferedWriter.write(
