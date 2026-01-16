@@ -1,6 +1,7 @@
 void main() {
     IO.println(stringMatch("xxcaazz", "xxbaaz"));
     IO.println(stringX("xxHalxxlxoxx"));
+    IO.println(stringX1("x"));
 }
 
 /*
@@ -36,4 +37,14 @@ public String stringX(String str) {
         }
     }
     return result;
+}
+
+//This is my solution
+public String stringX1(String str) {
+    if(str.isEmpty() || str.equals("x")) return str;
+    if(str.charAt(0) == 'x' && str.endsWith("x")){
+        String newStr = str.replaceAll("[x]", "");
+        return ("x".concat(newStr).concat("x"));
+    }
+    return (str.replaceAll("[x]", ""));
 }
