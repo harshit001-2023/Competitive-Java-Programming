@@ -3,7 +3,7 @@ void main() {
 //    IO.println(stringX("xxHalxxlxoxx"));
 //    IO.println(stringX1("x"));
 //    IO.println(altPairs("abcdefghij"));
-    IO.println(stringYak("pakyakya"));
+    IO.println(stringYak("yakya"));
 }
 
 /*
