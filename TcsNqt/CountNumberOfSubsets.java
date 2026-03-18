@@ -1,4 +1,4 @@
-package TCSQuestions;
+package TcsNqt.TCSQuestions;
 
 /*Q2) Given an array of integers and a sum, the task is to count all subsets of given array with sum
 equal to given sum.

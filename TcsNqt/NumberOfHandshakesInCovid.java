@@ -1,4 +1,4 @@
-package TCSQuestions;
+package TcsNqt.TCSQuestions;
 
 /*Q3) Before the outbreak of coronavirus to the world, a meeting happened in a room in Wuhan. A
 person who attended that meeting had COVID-19 and no one in the room knew about it! So
@@ -25,7 +25,6 @@ Case 1 : The lonely board member shakes no hands, hence 0.
 Case 2 : There are 2 board members, 1 handshake takes place.
 */
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class NumberOfHandshakesInCovid {

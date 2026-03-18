@@ -1,4 +1,4 @@
-package TCSQuestions;
+package TcsNqt.TCSQuestions;
 
 /*
 * Q1) Given an array of integers where every element appears even number of times except one
